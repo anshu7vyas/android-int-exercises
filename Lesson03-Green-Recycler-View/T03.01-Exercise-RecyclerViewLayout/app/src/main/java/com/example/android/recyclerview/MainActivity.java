@@ -36,13 +36,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*
+        /**
          * Using findViewById, we get a reference to our RecyclerView from xml. This allows us to
          * do things like set the adapter of the RecyclerView and toggle the visibility.
          */
         mNumbersList = (RecyclerView) findViewById(R.id.rv_numbers);
 
-        /*
+        /**
          * A LinearLayoutManager is responsible for measuring and positioning item views within a
          * RecyclerView into a linear list. This means that it can produce either a horizontal or
          * vertical list depending on which parameter you pass in to the LinearLayoutManager
