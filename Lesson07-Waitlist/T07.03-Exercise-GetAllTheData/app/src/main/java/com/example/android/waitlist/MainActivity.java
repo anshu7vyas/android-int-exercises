@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         // DONE (2) Create a WaitlistDbHelper instance, pass "this" to the constructor as context
         WaitlistDbHelper waitlistDbHelper = new WaitlistDbHelper(this);
         // DONE (3) Get a writable database reference using getWritableDatabase and store it in mDb
-        waitlistDbHelper.getWritableDatabase();
+        mDB = waitlistDbHelper.getWritableDatabase();
         // DONE (4) call insertFakeData from TestUtil and pass the database reference mDb
         TestUtil.insertFakeData(mDB);
         // DONE (7) Run the getAllGuests function and store the result in a Cursor variable
